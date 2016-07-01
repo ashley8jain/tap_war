@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FirstGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYn-CX-Eof">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Player 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="player2pressedb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WzL-qb-zwd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6V-Hc-HaB">
+                                <rect key="frame" x="0.0" y="283" width="320" height="284"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="42"/>
+                                <state key="normal" title="Player 1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="player1pressedb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KMJ-6a-jKT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O21-jG-TsE">
+                                <rect key="frame" x="137" y="233" width="47" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="42"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLc-CV-4b9">
+                                <rect key="frame" x="137" y="278" width="47" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="42"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Winner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-3a-l3a">
+                                <rect key="frame" x="146" y="253" width="118" height="47"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouz-3m-hDw">
+                                <rect key="frame" x="101" y="401" width="118" height="47"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-DF-R73">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="568"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="0.38191511824324326" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="51"/>
+                                <state key="normal" title="Try again">
+                                    <color key="titleColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tryagain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5dq-xX-CMU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O21-jG-TsE" firstAttribute="top" secondItem="VYn-CX-Eof" secondAttribute="bottom" constant="-51" id="8NZ-wE-4VQ"/>
+                            <constraint firstItem="n6V-Hc-HaB" firstAttribute="top" secondItem="VYn-CX-Eof" secondAttribute="bottom" constant="-1" id="9G5-SD-9af"/>
+                            <constraint firstItem="dLc-CV-4b9" firstAttribute="centerX" secondItem="n6V-Hc-HaB" secondAttribute="centerX" id="B6Y-Qw-5lm"/>
+                            <constraint firstItem="n6V-Hc-HaB" firstAttribute="centerX" secondItem="ouz-3m-hDw" secondAttribute="centerX" id="BnG-zi-x9E"/>
+                            <constraint firstItem="O21-jG-TsE" firstAttribute="centerX" secondItem="VYn-CX-Eof" secondAttribute="centerX" id="Ddx-TW-LxG"/>
+                            <constraint firstItem="n6V-Hc-HaB" firstAttribute="top" secondItem="dLc-CV-4b9" secondAttribute="bottom" constant="-46" id="GKF-FT-8mw"/>
+                            <constraint firstAttribute="centerY" secondItem="DIe-DF-R73" secondAttribute="centerY" constant="1" id="HSd-3v-y1y"/>
+                            <constraint firstAttribute="height" secondItem="DIe-DF-R73" secondAttribute="height" id="IEd-xs-S5o"/>
+                            <constraint firstAttribute="centerX" secondItem="VYn-CX-Eof" secondAttribute="centerX" id="Lcs-fv-rxy"/>
+                            <constraint firstItem="VYn-CX-Eof" firstAttribute="height" secondItem="n6V-Hc-HaB" secondAttribute="height" id="RK3-0l-5Ig"/>
+                            <constraint firstItem="aZA-3a-l3a" firstAttribute="centerY" secondItem="VYn-CX-Eof" secondAttribute="centerY" constant="-0.5" id="Wbs-XS-TNB"/>
+                            <constraint firstAttribute="centerX" secondItem="DIe-DF-R73" secondAttribute="centerX" id="cXl-4f-1Lc"/>
+                            <constraint firstAttribute="centerX" secondItem="n6V-Hc-HaB" secondAttribute="centerX" id="fgz-6Y-zjh"/>
+                            <constraint firstAttribute="width" secondItem="n6V-Hc-HaB" secondAttribute="width" id="kgz-5h-sfI"/>
+                            <constraint firstAttribute="width" secondItem="DIe-DF-R73" secondAttribute="width" id="lru-bV-vq4"/>
+                            <constraint firstAttribute="width" secondItem="DIe-DF-R73" secondAttribute="width" id="oLR-lq-bxB"/>
+                            <constraint firstItem="aZA-3a-l3a" firstAttribute="centerX" secondItem="VYn-CX-Eof" secondAttribute="centerX" id="qZ8-zc-SVc"/>
+                            <constraint firstItem="VYn-CX-Eof" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="qal-xA-uHn"/>
+                            <constraint firstItem="n6V-Hc-HaB" firstAttribute="centerY" secondItem="ouz-3m-hDw" secondAttribute="centerY" constant="0.5" id="sei-wT-f7h"/>
+                            <constraint firstAttribute="width" secondItem="VYn-CX-Eof" secondAttribute="width" id="szk-kM-zUl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="n6V-Hc-HaB" secondAttribute="bottom" constant="1" id="tT7-u6-jaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="player1b" destination="n6V-Hc-HaB" id="iMR-np-sCw"/>
+                        <outlet property="player1final" destination="ouz-3m-hDw" id="7dl-tu-lM9"/>
+                        <outlet property="player2b" destination="VYn-CX-Eof" id="Ijv-R6-ZRU"/>
+                        <outlet property="player2final" destination="aZA-3a-l3a" id="DJ8-wq-QfV"/>
+                        <outlet property="score1" destination="dLc-CV-4b9" id="Q7y-AT-3td"/>
+                        <outlet property="score2" destination="O21-jG-TsE" id="RGQ-gR-0gg"/>
+                        <outlet property="tryAgain" destination="DIe-DF-R73" id="HSE-z9-YpY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="323"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
